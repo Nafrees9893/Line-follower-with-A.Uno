@@ -156,7 +156,7 @@ Folder Structure
 ├── README.md
 ├── code.ino  
 └── /hardware
-    └── wiring_diagram.png
+    └── d2_trigger.jpg
 
 feuture road map
 
