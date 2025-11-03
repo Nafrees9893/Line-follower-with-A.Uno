@@ -25,7 +25,7 @@ Arduino UNO / Nano (ATmega328P)
 Motor driver: L298N 
 
 2x DC gear motors (left/right)
-if u use 4 motors.. couple them
+if u need u can use 4 motors.. couple them
 
 2x IR reflective sensors (digital output type)
 
@@ -88,9 +88,6 @@ PlatformIO (optional)
 git clone https://github.com/Nafrees9893/Line-follower-with-A.Uno.git
 cd Line-follower-with-A.uno
 
-pio run
-pio run -t upload
-pio device monitor -b 9600
 
 Power & Wiring Tips
 
