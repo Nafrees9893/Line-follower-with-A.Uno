@@ -2,13 +2,9 @@ Arduino UNO line follower with 2 IR sensors and HC-SR04 obstacle stop. Interrupt
 
 Line Follower Robot with Ultrasonic Obstacle Stop (ATmega328P / Arduino UNO)
 
-A simple two-wheel line follower that uses two IR sensors for line detection and an HC-SR04 ultrasonic sensor for obstacle stopping. Motor speed is PWM-controlled; distance is measured using an interrupt-driven echo for non-blocking reads.
+A simple two/Four-wheel line follower that uses two IR sensors for line detection and an HC-SR04 ultrasonic sensor for obstacle stopping. Motor speed is PWM-controlled; distance is measured using an interrupt-driven echo for non-blocking reads.
 
 Works on Arduino UNO / Nano (ATmega328P). No external libraries required.
-
-Demo
-
-Add a short clip or GIF here (e.g., /media/demo.gif).
 
 Features
 
@@ -26,9 +22,10 @@ Hardware
 
 Arduino UNO / Nano (ATmega328P)
 
-Motor driver: L298N (or compatible H-bridge)
+Motor driver: L298N 
 
 2x DC gear motors (left/right)
+if u use 4 motors.. couple them
 
 2x IR reflective sensors (digital output type)
 
@@ -58,7 +55,7 @@ Ensure ENA/ENB jumpers are removed on L298N so PWM from pins 6/5 actually contro
 
 Code
 
-Your full sketch is in src/line_follower.ino (or line_follower.ino at repo root). Key constants:
+Your full sketch is in . Key constants:
 
 #define OBSTACLE_THRESHOLD 100   // cm
 #define MOTOR_SPEED 180          // 0..255
@@ -88,7 +85,7 @@ Port: Select the correct COM/tty
 Open the sketch and click Upload
 
 PlatformIO (optional)
-git clone https://github.com/<your-username>/<your-repo>.git
+git clone https://github.com/<arif-m-nafrees>/<line-follower-witha.uno>.git
 cd <your-repo>
 # Create platformio.ini with env = uno
 pio run
