@@ -85,9 +85,9 @@ Port: Select the correct COM/tty
 Open the sketch and click Upload
 
 PlatformIO (optional)
-git clone https://github.com/<arif-m-nafrees>/<line-follower-witha.uno>.git
-cd <your-repo>
-# Create platformio.ini with env = uno
+git clone https://github.com/Nafrees9893/Line-follower-with-A.Uno.git
+cd Line-follower-with-A.uno
+
 pio run
 pio run -t upload
 pio device monitor -b 9600
@@ -154,12 +154,11 @@ IR logic inverted: Some IR modules output LOW on white and HIGH on black. Verify
 Folder Structure
 .
 ├── README.md
-├── line_follower.ino          # or /src/line_follower.ino
-├── /media                     # put demo images/videos here
+├── code.ino  
 └── /hardware
-    └── wiring_diagram.png     # add your diagram
+    └── wiring_diagram.png
 
-Roadmap (Nice-to-Have)
+feuture road map
 
 PID control for smoother line following
 
@@ -175,5 +174,5 @@ MIT License — free to use, modify, and share. Add your name & year.
 
 Credits
 
-Designed & built by [Your Name].
+Designed & built by Arif M Nafrees.
 If this helped, ⭐ star the repo and share your build!
